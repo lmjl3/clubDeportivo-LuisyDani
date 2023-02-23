@@ -22,6 +22,19 @@
 
 			//Ejecutamos sentencia y guardamos resultado
 			$resultado = $mysqli->query($sql);
+            if($resultado>0){
+                ?>
+                        <br>
+                        <p class="alert alert-primary">REGISTRO MODIFICADO</p>
+                <?php
+                    } else {
+                ?>
+                        <br>
+                          <p class="alert alert-danger">REGISTRO NO MODIFICADO</p>
+                <?php
+                    }
+                ?>
+                    <br>
     ?>
 </body>
 </html>
