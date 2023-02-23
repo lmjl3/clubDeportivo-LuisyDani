@@ -16,6 +16,12 @@
 
             //Establezco conexión
 			require 'conexion.php';
+
+            //Preparo la sentencia SQL
+			$sql = "DELETE FROM clubdeportivo WHERE id=$id";
+
+			//Ejecutamos sentencia y guardamos resultado
+			$resultado = $mysqli->query($sql);
 		?>
 	</body>
 </html>
