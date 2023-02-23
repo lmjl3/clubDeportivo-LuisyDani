@@ -10,3 +10,8 @@
 		
 		<title>Club Deportivo La Venta</title>
 	</head>
+    <body>
+		<div class="container">
+			<div class="row">
+				<h1>Socios</h1>
+			</div>
