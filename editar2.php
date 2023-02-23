@@ -7,6 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+        $id = $_POST['id'];
+        $nombre = $_POST['nombre'];
+        $telefono = $_POST['telefono'];
+        $fecha = $_POST['fecha'];
+        $categoria = $_POST['categoria'];
+
+        //Establezco conexión
+			require 'conexion.php';
+
+			//Preparo la sentencia SQL
+			$sql = "UPDATE clubdeportivo SET nombre='$nombre', telefono='$telefono', fecha_nacimiento='$fecha', categoria='$categoria' WHERE id=$id";
+
+			//Ejecutamos sentencia y guardamos resultado
+			$resultado = $mysqli->query($sql);
+    ?>
 </body>
 </html>
