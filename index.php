@@ -35,6 +35,48 @@
 		</script>
 </head>
 <body>
+div class="container">
+			<div class="row">
+				<h1>Socios</h1>
+			</div>
+			<br>
+			
+			<div class="row">
+				<a href="registrar.php" class="btn btn-primary">Registrar</a>
+			</div>
+			<br>
+			<br>
+			
+			<table id="tabla" class="display" style="width:100%">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Telefono</th>
+						<th>Fecha de nacimiento</th>
+						<th>Categoría</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php
+						while($fila = $resultado->fetch_assoc()){
+							echo "<tr>";
+							echo "<td>$fila[nombre]</td>";
+							echo "<td>$fila[telefono]</td>";
+							echo "<td>$fila[fecha_nacimiento]</td>";
+							echo "<td>$fila[categoria]</td>";
+					?>
+							<td><a href="editar.php?id=<?php echo $fila['id']; ?>" class="btn btn-warning">Editar</a></td>
+							<td><a href="eliminar.php?id=<?php echo $fila['id']; ?>" class="btn btn-danger">Eliminar</a></td>
+					<?php							
+							echo "</tr>";
+						}
+					?>
+				</tbody>
+			</table>
+			
+		</div>
     
 </body>
 </html>
