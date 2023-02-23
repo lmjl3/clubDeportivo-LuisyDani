@@ -11,6 +11,8 @@
 		<title>Club Deportivo La Venta</title>
 	</head>
 	<body>
-		
+        <?php
+			$id = $_GET['id'];
+		?>
 	</body>
 </html>
