@@ -1,3 +1,18 @@
+<?php
+	$id=$_GET['id'];
+	//Establezco conexión
+	require 'conexion.php';
+	
+	//Preparo la sentencia SQL
+	$sql = "SELECT * FROM clubdeportivo WHERE id=$id";
+
+	//Ejecuto la sentencia y guardo el resultado
+	$resultado = $mysqli->query($sql);
+
+	//Guardamos el registro obtenido en la variable $fila
+	$fila = $resultado->fetch_assoc();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
