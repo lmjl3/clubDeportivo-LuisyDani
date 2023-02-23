@@ -13,6 +13,9 @@
 	<body>
         <?php
 			$id = $_GET['id'];
+
+            //Establezco conexión
+			require 'conexion.php';
 		?>
 	</body>
 </html>
