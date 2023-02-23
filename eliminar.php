@@ -8,7 +8,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		
-		<title></title>
+		<title>Club Deportivo La Venta</title>
 	</head>
 	<body>
 		
